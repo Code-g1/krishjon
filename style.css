@@ -154,104 +154,28 @@ HTML elements. You don't need to change the body tags.
 Background image paths are relative to this CSS file.
 ========================================================= */
 
-body:has(.hero) {
-background-image:
-linear-gradient(
-rgba(3, 7, 17, 0.48),
-rgba(3, 7, 17, 0.80)
-),
-url("Images/a9618a5b59e84965aed698ec188b7beb.webp"),
-radial-gradient(
-circle at 20% 20%,
-#07376d,
-transparent 40%
-),
-linear-gradient(
-135deg,
-#030610,
-#10102a,
-#030610
-);
+/* ========================================
+   SHARED GAMING BACKGROUND
+   Applies to all four pages
+======================================== */
 
-background-size: cover, cover, cover, cover;
-background-position: center, center, center, center;
-background-attachment: fixed;
+body {
+    background:
+        linear-gradient(
+            rgba(5, 8, 20, 0.82),
+            rgba(5, 8, 20, 0.88)
+        ),
+        url("Images/gaming-background.webp")
+        center center / cover fixed no-repeat;
 
+    background-color: #050814;
 }
 
-body:has(.gallery-grid) {
-background-image:
-linear-gradient(
-rgba(3, 7, 17, 0.55),
-rgba(3, 7, 17, 0.83)
-),
-url("Images/wp7537567.jpg"),
-radial-gradient(
-circle at 80% 20%,
-#35105d,
-transparent 40%
-),
-linear-gradient(
-135deg,
-#030610,
-#10102a,
-#030610
-);
-
-background-size: cover, cover, cover, cover;
-background-position: center, center, center, center;
-background-attachment: fixed;
-
-}
-
-body:has(.info-table) {
-background-image:
-linear-gradient(
-rgba(3, 7, 17, 0.56),
-rgba(3, 7, 17, 0.84)
-),
-url("Images/legends-of-runeterra-mobile-victory.png"),
-radial-gradient(
-circle at 20% 20%,
-#063d68,
-transparent 40%
-),
-linear-gradient(
-135deg,
-#030610,
-#10102a,
-#030610
-);
-
-background-size: cover, cover, cover, cover;
-background-position: center, center, center, center;
-background-attachment: fixed;
-
-}
-
-body:has(.contact-layout) {
-background-image:
-linear-gradient(
-rgba(3, 7, 17, 0.50),
-rgba(3, 7, 17, 0.80)
-),
-url("Images/360_F_505024392_UKsgoRQFhPgoO2MdU7moGkGeSNYXhpbR.jpg"),
-radial-gradient(
-circle at 80% 15%,
-#311064,
-transparent 40%
-),
-linear-gradient(
-135deg,
-#030610,
-#10102a,
-#030610
-);
-
-background-size: cover, cover, cover, cover;
-background-position: center, center, center, center;
-background-attachment: fixed;
-
+/* Mobile background adjustment */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
 }
 
 /* =========================================================
