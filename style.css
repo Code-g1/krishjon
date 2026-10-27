@@ -159,19 +159,20 @@ Background image paths are relative to this CSS file.
    Applies to all four pages
 ======================================== */
 
-body {
-    background:
-        linear-gradient(
-            rgba(5, 8, 20, 0.82),
-            rgba(5, 8, 20, 0.88)
-        ),
-        url("Images/808d4993-8c9a-4cda-a083-f77da183ff7e.jpeg")
-        center center / cover fixed no-repeat;
+/* ========================================
+   VISIBLE NEON GAMING BACKGROUND
+======================================== */
 
+body {
+    background-image: url("Images/808d4993-8c9a-4cda-a083-f77da183ff7e.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-color: #050814;
 }
 
-/* Mobile background adjustment */
+/* Keep the background fixed on larger screens */
 @media (max-width: 768px) {
     body {
         background-attachment: scroll;
